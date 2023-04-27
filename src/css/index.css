@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+input {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande',
+    sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+
+.app-container {
+  margin: 0 auto; /* Center the app horizontally */
+  max-width: 667px; /* Set the maximum width of your app */
+  height: 100%; /* Set the height to 100% of the viewport */
+  background-color: white; /* Set the background color of your app to white or the desired color */
+}
+
+.root {
+  height: 100%;
+  padding: 0.5em;
+  border: 10px solid #000000;
+  border-radius: 20px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .root{
+    height: fit-content;
+  }
+}
